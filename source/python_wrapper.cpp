@@ -35,6 +35,7 @@ BOOST_PYTHON_MODULE(pyPolyCSG){
 	.def( "rotate",                    &polyhedron::rotate )
 	.def( "scale",                     &polyhedron::scale )
 	.def( "save_mesh",                 &polyhedron::output_store_in_file )
+  .def( "load_from_lists",           &polyhedron::initialize_load_from_mesh )
     
     .def( "num_vertices",              &polyhedron::num_vertices )
     .def( "num_faces",                 &polyhedron::num_faces )
